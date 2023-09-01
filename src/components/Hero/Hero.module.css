@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  padding-top: 100px;
+  flex: 1 1 auto;
+}
+
+.background {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 72px;
+  color: var(--text-background);
+  z-index: -1;
+}
+
+.background span {
+    font-size: 56px;
+}
+
+.avatar {
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.greetings {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.animation {
+  font-size: 50px;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+.description {
+  font-weight: bold;
+}

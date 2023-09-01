@@ -1,0 +1,25 @@
+.wrapper {
+  background: #f4f4f4;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.anchor {
+  color: var(--text-gray-light);
+  text-decoration: none;
+}
+
+.item:not(:last-child) {
+  margin-right: 30px;
+}

@@ -1,0 +1,6 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-gray-light);
+  min-height: 60px;
+}
