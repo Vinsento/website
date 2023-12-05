@@ -1,0 +1,16 @@
+.themeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.themeBtn svg {
+  width: 100%;
+  height: 100%;
+}

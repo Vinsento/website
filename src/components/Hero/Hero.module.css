@@ -2,20 +2,10 @@
   position: relative;
   padding-top: 100px;
   flex: 1 1 auto;
+  background-color: var(--hero-background);
 }
 
-.background {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  font-size: 72px;
-  color: var(--text-background);
-  z-index: -1;
-}
-
-.background span {
-    font-size: 56px;
+.main {
 }
 
 .avatar {
@@ -45,8 +35,47 @@
   font-size: 50px;
   font-weight: bold;
   max-width: 800px;
+  color: var(--text-header);
 }
 
 .description {
   font-weight: bold;
+}
+
+.text h1,
+.greetings,
+.description {
+  color: var(--text-header);
+}
+
+@media screen and (max-width: 768px) {
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .greetings {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .description {
+    text-align: center;
+  }
 }

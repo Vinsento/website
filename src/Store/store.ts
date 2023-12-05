@@ -1,6 +1,6 @@
-import type { Treducer, TState, TAction, TCallbackFunc } from "../Types/Types"
+import type { TReducer, TState, TAction, TCallbackFunc } from "../Types/Types"
 
-export function createStore(reducer: Treducer<string>, initialState: TState<string>) {
+export function createStore(reducer: TReducer<string>, initialState: TState<string>) {
   let state = initialState
   let callbacks: TCallbackFunc[] = []
 

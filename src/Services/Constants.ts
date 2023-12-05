@@ -1,4 +1,5 @@
 export const RUSSIAN = 'ru'
 export const UKRAINIAN = 'uk'
 export const ENGLISH = 'en'
-
+export const DARK = 'dark'
+export const LIGHT = 'light'

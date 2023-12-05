@@ -2,12 +2,12 @@ export interface IRoute {
   home: '/',
   about: '/about',
   contact: '/contact',
-  skills: '/skills'
+  projects: '/projects'
 }
 
 export const ROUTES: IRoute = {
   home: '/',
   about: '/about',
   contact: '/contact',
-  skills: '/skills'
+  projects: '/projects'
 }

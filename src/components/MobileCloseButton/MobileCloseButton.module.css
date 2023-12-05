@@ -1,0 +1,30 @@
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background: var(--text-gray-dark);
+}
+
+.close:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

@@ -1,10 +1,16 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { NavButtonProps } from './NavButton.props';
+import './NavButton.css';
 
-export const NavButton = ({ to, children, className }: NavButtonProps) => {
+export const NavButton = ({
+  to,
+  children,
+  className,
+  handleClick,
+}: NavButtonProps) => {
   return (
-    <Link to={to} className={className}>
+    <NavLink to={to} className={className} onClick={handleClick}>
       {children}
-    </Link>
+    </NavLink>
   );
 };

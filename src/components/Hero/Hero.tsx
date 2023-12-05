@@ -8,17 +8,8 @@ import '../../Styles/Container.css';
 
 export const Hero = () => {
   const { t } = useTranslation();
-  const {
-    wrapper,
-    main,
-    greetings,
-    me,
-    text,
-    description,
-    avatar,
-    background,
-    animation,
-  } = styles;
+  const { wrapper, main, greetings, me, text, description, avatar, animation } =
+    styles;
 
   const strings = [
     t('Live-country'),

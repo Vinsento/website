@@ -1,0 +1,9 @@
+.wrapper {
+  flex: 1 1 auto;
+  background-color: var(--hero-background);
+  padding-top: 100px;
+}
+
+.wrapper p {
+  color: var(--text-header);
+}

@@ -1,0 +1,21 @@
+.heading {
+  margin: 20px 0;
+}
+
+.wrapper {
+  margin-top: 0;
+  flex: 1 1 auto;
+  background-color: var(--hero-background);
+  height: 100%;
+  padding-top: 100px;
+}
+
+.wrapper p {
+  max-width: 700px;
+  font-weight: 500;
+}
+
+.heading,
+.wrapper p {
+  color: var(--text-header);
+}

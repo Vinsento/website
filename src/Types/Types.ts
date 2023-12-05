@@ -8,4 +8,4 @@ export type TAction= {
   type: string,
 }
 
-export type Treducer<T> = (state: TState<T>, action: TAction) => TState<T>
+export type TReducer<T> = (state: TState<T>, action: TAction) => TState<T>
