@@ -7,7 +7,7 @@
   flex: 1 1 auto;
   background-color: var(--hero-background);
   height: 100%;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .wrapper p {
@@ -18,4 +18,10 @@
 .heading,
 .wrapper p {
   color: var(--text-header);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 30px 0;
+  }
 }
