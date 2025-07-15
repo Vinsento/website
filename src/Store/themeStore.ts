@@ -1,5 +1,5 @@
-import { themeReducer } from "../reducers/themeReducer"
-import { createStore } from "./store"
+import { themeReducer } from "../reducers/themeReducer";
+import { createStore } from "./store";
 
-const initialState = {value: 'light'}
-export const themeStore = createStore(themeReducer, initialState)
+const initialState = { value: "dark" };
+export const themeStore = createStore(themeReducer, initialState);

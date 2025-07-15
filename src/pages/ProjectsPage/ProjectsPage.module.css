@@ -4,6 +4,19 @@
   padding-top: 100px;
 }
 
-.wrapper p {
+.wrapper p,
+.projectSite,
+.projectAnother {
   color: var(--text-header);
+}
+
+.projectSite,
+.projectAnother {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projectSite {
+    text-align: center;
+  }
 }
