@@ -1,4 +1,4 @@
-.close{
+.close {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -20,11 +20,11 @@
 }
 
 .close:before {
-  webkit-transform: rotate(45deg);
+  -webkit-transform-: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .close:after {
-  webkit-transform: rotate(-45deg);
+  -webkit-transform-: rotate(-45deg);
   transform: rotate(-45deg);
 }
