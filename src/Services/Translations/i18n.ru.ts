@@ -19,8 +19,9 @@ export const ru = {
     "Phone": "Мой телефон:",
     "niagara-mobile": "Мобильное приложение для клиентов Niagara Club",
     "description-website":
-      "Этот сайт портфолио использует связку React + Redux + Firebase",
+      "Этот сайт портфолио использует связку React + Firebase",
     "another-projects": "Мои другие проекты:",
+    "snake-game": "Простая игра змейка. Пет-проект.",
     //UI titles
     "[btn-name] About": "Обо мне",
     "[btn-name] Projects": "Мои проекты",

@@ -20,8 +20,9 @@ export const uk = {
     "niagara-mobile":
       "Веб версія та мобільний застосунок для клієнтів Niagara Club",
     "description-website":
-      "Цей сайт портфоліо використовує стек React + Redux + Firebase",
+      "Цей сайт портфоліо використовує стек React + Firebase",
     "another-projects": "Мої інші проекти:",
+    "snake-game": "Проста гра. Мій пет-проект.",
     //UI titles
     "[btn-name] About": "Про мене",
     "[btn-name] Projects": "Мої проекти",

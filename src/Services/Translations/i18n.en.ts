@@ -18,9 +18,9 @@ export const en = {
     "Email": "Email:",
     "Phone": "Phone number:",
     "niagara-mobile": "Web and mobile app for client of Niagara Club",
-    "description-website":
-      "This portfolio site uses stack - React, Redux, Firebase",
+    "description-website": "This portfolio site uses stack - React, Firebase",
     "another-projects": "My another project:",
+    "snake-game": "Simple snake game. Just for fun.",
     //UI titles
     "[btn-name] About": "About me",
     "[btn-name] Projects": "My projects",

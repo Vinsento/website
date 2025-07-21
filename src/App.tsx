@@ -10,6 +10,7 @@ import { languageStore } from "./Store/languageStore";
 import { themeStore } from "./Store/themeStore";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { SnakeGamePage } from "./pages/SnakeGamePage/SnakeGamePage";
 
 function App() {
   const { getState, subscribe } = languageStore;
@@ -45,6 +46,7 @@ function App() {
           <Route path={ROUTES.about} element={<AboutPage />} />
           <Route path={ROUTES.contact} element={<ContactPage />} />
           <Route path={ROUTES.projects} element={<ProjectsPage />} />
+          <Route path={ROUTES.snake} element={<SnakeGamePage />} />
         </Routes>
       </Layout>
     </>
