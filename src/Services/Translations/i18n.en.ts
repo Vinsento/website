@@ -7,7 +7,7 @@ export const en = {
     "About-me-details": `I am a simple and open-minded person. An optimist with a sense of humor (but that’s not guaranteed). I love people — communication with others is my strong suit. Above all, I value honesty and modesty in people. I am stress-resistant, although I don’t like stressful situations (I guess, like all of us). My short-term goal is to become a full-stack engineer. My dream is to work in game development one day. My main interests are computer hardware, programming, games, and a bit of sports. When it comes to music, I listen to everything except chanson. I enjoy watching movies. My favorite genre is science fiction.`,
     "Projects page": "Welcome to my projects page",
     "Contact page": "My contact information",
-    "Greetings": "Hi, my name is Vitaliy. Friends call me Vito",
+    "Greetings": "Hi, my name is Vitaliy. Friends call me Vito.",
     "Live": "I`m from ",
     "Live-country": "Ukraine",
     "Live-earth": "our Earth",

@@ -53,6 +53,15 @@
   color: var(--text-header);
 }
 
+.my-avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.my-small-avatar {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .me {
     display: flex;
@@ -67,5 +76,13 @@
 
   .text {
     display: none;
+  }
+
+  .my-avatar {
+    display: none;
+  }
+
+  .my-small-avatar {
+    display: flex;
   }
 }
