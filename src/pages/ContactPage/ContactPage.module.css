@@ -26,3 +26,7 @@
 .link a{
   color: var(--text-header);
 }
+
+.link a {
+  text-decoration: none;
+}

@@ -9,7 +9,7 @@ export class Snake {
 
   draw(ctx, blockSize) {
     for (var i = 0; i < this.segments.length; i++) {
-      if (i == 0) {
+      if (i === 0) {
         this.segments[i].drawCircle(ctx, blockSize, "Tomato");
       } else {
         this.segments[i].drawSquare(ctx, blockSize, "Blue");

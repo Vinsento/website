@@ -2,9 +2,9 @@ export const en = {
   translation: {
     // content
     "About-exp": "Experience:",
-    "About-exp-details": `I am a mechanical engineer by profession, not a programmer. Officially, I have been in the frontend development since 2019. Before that, I learned HTML and CSS by myself. I have no education related to programming, except for the frontend course at Beetroot Academy. For now, I have more than three years of commercial experience and my main tool is ReactJS. I am a strong junior react developer.`,
+    "About-exp-details": `By education, I am a mechanical engineer, specializing in manufacturing technology. I have been officially working in front-end development since 2019. Before that, I spent some time learning HTML and CSS on my own. Overall, I am self-taught. I have no formal education related to programming, except for a Front-end course at Beetroot Academy. As of today, my commercial experience amounts to about 5 years. Although I am a front-end developer, I am currently trying myself in back-end development. I enjoy learning new things.`,
     "About-me": "About me:",
-    "About-me-details": `I am a simple and open person. An optimist with a sense of humor (I hope so...). I love people. Communication with others is my strong side. Honesty and modesty in people have the biggest price for me. I'm stress-resistant, but I don't like stressful situations (I think like all of us). I like to learn and am always ready for something new. My immediate goal is to be a full-stack engineer. But in general, I dream of working in game development. My main interests are computer technology, programming, games and a little bit of sports. I like listening to music and watching movies. My favorite genre is fantasy.`,
+    "About-me-details": `I am a simple and open-minded person. An optimist with a sense of humor (but that’s not guaranteed). I love people — communication with others is my strong suit. Above all, I value honesty and modesty in people. I am stress-resistant, although I don’t like stressful situations (I guess, like all of us). My short-term goal is to become a full-stack engineer. My dream is to work in game development one day. My main interests are computer hardware, programming, games, and a bit of sports. When it comes to music, I listen to everything except chanson. I enjoy watching movies. My favorite genre is science fiction.`,
     "Projects page": "Welcome to my projects page",
     "Contact page": "My contact information",
     "Greetings": "Hi, my name is Vitaliy. Friends call me Vito",
@@ -26,5 +26,7 @@ export const en = {
     "[btn-name] Projects": "My projects",
     "[btn-name] Contact": "Contact me",
     "[option-name] Language": "Lang: ",
+    "theme-status-dark": "Light mode",
+    "theme-status-light": "Dark mode"
   },
 };

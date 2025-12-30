@@ -12,6 +12,7 @@ import { MobileCloseButton } from '../MobileCloseButton';
 
 export const Navbar = ({ dispatch, getState }: INavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectIsOpen, setSelectIsOpen] = useState(false);
 
   const { t } = useTranslation();
 
@@ -25,6 +26,10 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
     navigation,
     mobileHeader,
     active,
+    language,
+    select,
+    option,
+    options
   } = styles;
 
   const { pathname } = useLocation();
@@ -36,6 +41,10 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
   const handleMobileToggle = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const handleSelectToggle = () => {
+    setSelectIsOpen((prev) => !prev)
+  }
 
   return (
     <div className={wrapper}>
@@ -88,18 +97,19 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
             </li>
           </ul>
         </div>
-        <label>
-          {t('[option-name] Language')}
-          <select
-            name='language'
-            onChange={(e) => dispatch({ type: e.target.value })}
-            value={getState().value}
-          >
-            <option value='en'>En</option>
-            <option value='uk'>Ua</option>
-            <option value='ru'>Ru</option>
-          </select>
-        </label>
+        <div className={styles['language-box']}>
+          <p className={language}>
+            {t('[option-name] Language')}
+          </p>
+          <div className={select} onClick={handleSelectToggle}>
+            <div className={styles['default-option']}>{getState().value === 'uk' ? 'ua' : getState().value}</div>
+            {selectIsOpen && <div className={options}>
+              <div data-value='en' className={option} onClick={()=> {dispatch({type: 'en'})}}>en</div>
+              <div data-value='uk' className={option} onClick={()=> {dispatch({type: 'uk'})}}>ua</div>
+              <div data-value='ru' className={option} onClick={()=> {dispatch({type: 'ru'})}}>ru</div>
+            </div>}
+          </div>
+        </div>
       </div>
     </div>
   );
