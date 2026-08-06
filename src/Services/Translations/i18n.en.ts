@@ -18,6 +18,8 @@ export const en = {
     "Email": "Email:",
     "Phone": "Phone number:",
     "niagara-mobile": "Web and mobile app for client of Niagara Club",
+    "lkames": "Website for a small estimating company Lkames",
+    "bp-manager": "Simple manager for collecting Bonus Points on GTA 5 RP",
     "description-website": "This portfolio site uses stack - React, Firebase",
     "another-projects": "My another project:",
     "snake-game": "Simple snake game. Just for fun.",

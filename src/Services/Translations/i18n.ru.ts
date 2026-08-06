@@ -18,6 +18,8 @@ export const ru = {
     "Email": "Моя почта:",
     "Phone": "Мой телефон:",
     "niagara-mobile": "Мобильное приложение для клиентов Niagara Club",
+    "lkames": "Сайт визитка небольшой сметной компании Lkames",
+    "bp-manager": "Простой менеджер для сбора бонусных очков в GTA 5 RP",
     "description-website":
       "Этот сайт портфолио использует связку React + Firebase",
     "another-projects": "Мои другие проекты:",
