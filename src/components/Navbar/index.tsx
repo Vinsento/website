@@ -46,6 +46,10 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
     setSelectIsOpen((prev) => !prev)
   }
 
+  function capitalizeFirstLetter(str: string) : string{
+    return str[0].toUpperCase() + str.slice(1)
+  }
+
   return (
     <div className={wrapper}>
       <div className={`${content} container`}>
@@ -102,11 +106,11 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
             {t('[option-name] Language')}
           </p>
           <div className={select} onClick={handleSelectToggle}>
-            <div className={styles['default-option']}>{getState().value === 'uk' ? 'ua' : getState().value}</div>
+            <div className={styles['default-option']}>{getState().value === 'uk' ? 'Ua' : capitalizeFirstLetter(getState().value)}</div>
             {selectIsOpen && <div className={options}>
-              <div data-value='en' className={option} onClick={()=> {dispatch({type: 'en'})}}>en</div>
-              <div data-value='uk' className={option} onClick={()=> {dispatch({type: 'uk'})}}>ua</div>
-              <div data-value='ru' className={option} onClick={()=> {dispatch({type: 'ru'})}}>ru</div>
+              <div data-value='en' className={option} onClick={()=> {dispatch({type: 'en'})}}>En</div>
+              <div data-value='uk' className={option} onClick={()=> {dispatch({type: 'uk'})}}>Ua</div>
+              <div data-value='ru' className={option} onClick={()=> {dispatch({type: 'ru'})}}>Ru</div>
             </div>}
           </div>
         </div>

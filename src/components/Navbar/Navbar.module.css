@@ -25,11 +25,11 @@
   margin-right: 30px;
 }
 
-.anchor, 
+.anchor,
 .language,
 .option,
 .default-option {
-  color: var(--text-gray-light);
+  color: var(--text-gray-dark);
 }
 
 .first {
@@ -65,6 +65,7 @@
   width: 40px;
   height: 40px;
   background-color: var(--main-grey);
+  color: var(--main-gray-dark);
   margin-bottom: 3px;
   border-radius: 10px;
   user-select: none;
@@ -78,7 +79,6 @@
 
 .options {
   list-style: none;
-  color: var(--text-gray-light);
   position: absolute;
   top: 43px;
   right: 0;

@@ -1,12 +1,12 @@
 .project-link {
   text-decoration: none;
-  color: var(--text-gray-light);
+  color: var(--text-gray-dark);
   font-weight: bold;
 }
 
 .project-card {
   display: flex;
-  color: var(--text-gray-light);
+  color: var(--text-gray-dark);
   margin-bottom: 30px;
 }
 
@@ -32,7 +32,7 @@
 .project-store {
   display: block;
   text-decoration: none;
-  color: var(--text-gray-light);
+  color: var(--text-gray-dark);
   font-weight: bold;
 }
 
