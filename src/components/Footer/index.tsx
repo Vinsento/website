@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { themeStore } from '../../Store/themeStore';
 import { ThemeButton } from '../ThemeButton';
 import styles from './Footer.module.css';
@@ -9,7 +9,10 @@ export const Footer = () => {
 
   const [theme, setTheme] = useState(getState().value);
 
-  subscribe(() => setTheme(getState().value));
+  useEffect(
+    () => subscribe(() => setTheme(getState().value)),
+    [getState, subscribe]
+  );
 
   return (
     <div className={wrapper}>

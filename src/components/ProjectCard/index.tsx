@@ -1,24 +1,32 @@
 import { useTranslation } from "react-i18next";
 import "./ProjectCard.css";
 import { NavButton } from "../NavButton";
+import { ProjectCardProps } from "./ProjectCard.props";
 
-export const ProjectCard = ({ logo, stack, links, external, decription, linkName = "" }) => {
+export const ProjectCard = ({
+  logo,
+  stack,
+  links,
+  external,
+  description,
+  linkName = "Website",
+}: ProjectCardProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="project-card">
+    <article className="project-card">
       <div className="project-image">
-        <img src={logo} alt="project logo" />
+        <img src={logo} alt="" />
       </div>
       <div className="project-info">
-        <div className="project-description">{t(decription)}</div>
+        <div className="project-description">{t(description)}</div>
         <div className="project-stack">
           <span>Stack</span> - {stack}
         </div>
-        {links && external ? (
+        {external ? (
           <div className="project-links">
-            {
-              links.appStore && <a
+            {links.appStore && (
+              <a
                 href={links.appStore}
                 className="project-store"
                 target="_blank"
@@ -26,9 +34,9 @@ export const ProjectCard = ({ logo, stack, links, external, decription, linkName
               >
                 App Store
               </a>
-            }
-            {
-              links.googlePlay && <a
+            )}
+            {links.googlePlay && (
+              <a
                 href={links.googlePlay}
                 className="project-store"
                 target="_blank"
@@ -36,9 +44,9 @@ export const ProjectCard = ({ logo, stack, links, external, decription, linkName
               >
                 Google Play
               </a>
-            }
-            {
-              links.web && <a
+            )}
+            {links.web && (
+              <a
                 href={links.web}
                 className="project-store"
                 target="_blank"
@@ -46,14 +54,16 @@ export const ProjectCard = ({ logo, stack, links, external, decription, linkName
               >
                 {linkName}
               </a>
-            }
+            )}
           </div>
         ) : (
-          <NavButton to={links.route} className="project-link">
-            {links.name}
-          </NavButton>
+          links.route && (
+            <NavButton to={links.route} className="project-link">
+              {links.name}
+            </NavButton>
+          )
         )}
       </div>
-    </div>
+    </article>
   );
 };

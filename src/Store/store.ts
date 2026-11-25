@@ -13,7 +13,9 @@ export function createStore(reducer: TReducer<string>, initialState: TState<stri
 
   const subscribe = (callback: TCallbackFunc) => {
     callbacks.push(callback)
-    return () => callbacks.filter(cb => cb !== callback)
+    return () => {
+      callbacks = callbacks.filter(cb => cb !== callback)
+    }
   } 
 
   return {getState, dispatch, subscribe}

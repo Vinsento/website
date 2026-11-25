@@ -5,10 +5,15 @@ export const BurgerMenu = ({ setIsOpen }: BurgerMenuProps) => {
   const { body, burgerLine, isShown } = styles;
 
   return (
-    <div className={`${body} ${isShown}`} onClick={setIsOpen}>
+    <button
+      type="button"
+      className={`${body} ${isShown}`}
+      onClick={setIsOpen}
+      aria-label="Open navigation"
+    >
       <span className={burgerLine} />
       <span className={burgerLine} />
       <span className={burgerLine} />
-    </div>
+    </button>
   );
 };

@@ -16,27 +16,25 @@ function App() {
   const { getState, subscribe } = languageStore;
   const { i18n } = useTranslation();
 
-  subscribe(() => changeLang(getState().value));
-
-  const changeLang = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
-
   useEffect(() => {
-    changeLang(getState().value);
-
-    document.documentElement.setAttribute(
-      "data-aria",
-      themeStore.getState().value
+    i18n.changeLanguage(getState().value);
+    const unsubscribeLanguage = subscribe(() =>
+      i18n.changeLanguage(getState().value)
     );
-
-    themeStore.subscribe(() =>
+    const updateTheme = () =>
       document.documentElement.setAttribute(
         "data-aria",
         themeStore.getState().value
-      )
-    );
-  }, [themeStore.getState().value]);
+      );
+
+    updateTheme();
+    const unsubscribeTheme = themeStore.subscribe(updateTheme);
+
+    return () => {
+      unsubscribeLanguage();
+      unsubscribeTheme();
+    };
+  }, [getState, i18n, subscribe]);
 
   return (
     <>

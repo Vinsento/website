@@ -4,6 +4,8 @@
   right: 5px;
   width: 55px;
   height: 55px;
+  border: 0;
+  background: transparent;
   cursor: pointer;
 }
 

@@ -2,18 +2,18 @@ import { useRef, useEffect, useState } from "react";
 import { initSnakeGame } from "./SnakeGame";
 import styles from "./SnakeGamePage.module.css";
 
+const DIRECTIONS = {
+  37: "left",
+  38: "up",
+  39: "right",
+  40: "down",
+};
+
 export const SnakeGamePage = () => {
   const canvasRef = useRef();
   const gameRef = useRef(null);
   const [isGameRunning, setIsGameRunning] = useState(false);
   const [score, setScore] = useState(0);
-
-  const directions = {
-    37: "left",
-    38: "up",
-    39: "right",
-    40: "down",
-  };
 
   const handleStartClick = () => {
     if (gameRef.current) {
@@ -26,7 +26,7 @@ export const SnakeGamePage = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      var newDirection = directions[e.keyCode];
+      const newDirection = DIRECTIONS[e.keyCode];
 
       if (newDirection && gameRef.current) {
         gameRef.current.setDirection(newDirection);
@@ -45,6 +45,9 @@ export const SnakeGamePage = () => {
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      if (gameRef.current) {
+        gameRef.current.stop();
+      }
     };
   }, []);
 

@@ -1,8 +1,13 @@
 .body {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 45px;
   height: 45px;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 .isShown {

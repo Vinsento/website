@@ -46,6 +46,11 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
     setSelectIsOpen((prev) => !prev)
   }
 
+  const handleLanguageChange = (language: 'en' | 'uk' | 'ru') => {
+    dispatch({ type: language });
+    setSelectIsOpen(false);
+  }
+
   function capitalizeFirstLetter(str: string) : string{
     return str[0].toUpperCase() + str.slice(1)
   }
@@ -105,12 +110,20 @@ export const Navbar = ({ dispatch, getState }: INavbarProps) => {
           <p className={language}>
             {t('[option-name] Language')}
           </p>
-          <div className={select} onClick={handleSelectToggle}>
-            <div className={styles['default-option']}>{getState().value === 'uk' ? 'Ua' : capitalizeFirstLetter(getState().value)}</div>
-            {selectIsOpen && <div className={options}>
-              <div data-value='en' className={option} onClick={()=> {dispatch({type: 'en'})}}>En</div>
-              <div data-value='uk' className={option} onClick={()=> {dispatch({type: 'uk'})}}>Ua</div>
-              <div data-value='ru' className={option} onClick={()=> {dispatch({type: 'ru'})}}>Ru</div>
+          <div className={select}>
+            <button
+              type="button"
+              className={styles['default-option']}
+              onClick={handleSelectToggle}
+              aria-expanded={selectIsOpen}
+              aria-haspopup="listbox"
+            >
+              {getState().value === 'uk' ? 'Ua' : capitalizeFirstLetter(getState().value)}
+            </button>
+            {selectIsOpen && <div className={options} role="listbox">
+              <button type="button" role="option" aria-selected={getState().value === 'en'} className={option} onClick={() => handleLanguageChange('en')}>En</button>
+              <button type="button" role="option" aria-selected={getState().value === 'uk'} className={option} onClick={() => handleLanguageChange('uk')}>Ua</button>
+              <button type="button" role="option" aria-selected={getState().value === 'ru'} className={option} onClick={() => handleLanguageChange('ru')}>Ru</button>
             </div>}
           </div>
         </div>

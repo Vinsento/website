@@ -67,6 +67,7 @@
   background-color: var(--main-grey);
   color: var(--main-gray-dark);
   margin-bottom: 3px;
+  border: none;
   border-radius: 10px;
   user-select: none;
   cursor: pointer;

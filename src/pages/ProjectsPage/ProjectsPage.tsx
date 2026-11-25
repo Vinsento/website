@@ -27,14 +27,14 @@ export const ProjectsPage = () => {
           stack="React and ChatGPT"
           links={{ route: "/snake", name: "Snake game" }}
           external={false}
-          decription="snake-game"
+          description="snake-game"
         />
         <ProjectCard
           logo={BpManagerLogo}
           stack="Vue.js, Quasar, Capacitor"
           links={{ web: "https://github.com/Vinsento/BP-manager"}}
           external={true}
-          decription="bp-manager"
+          description="bp-manager"
           linkName="GitHub"
         />
         <ProjectCard
@@ -42,14 +42,14 @@ export const ProjectsPage = () => {
           stack="Vue.js, Quasar, Capacitor"
           links={niagaraLinks}
           external={true}
-          decription="niagara-mobile"
+          description="niagara-mobile"
         />
         <ProjectCard
           logo={LkamesLogo}
           stack="Nuxt, Vue.js"
           links={{web: "https://lkames.vercel.app/"}}
           external={true}
-          decription="lkames"
+          description="lkames"
           linkName="Lkames"
         />
       </div>

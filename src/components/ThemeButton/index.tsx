@@ -13,11 +13,15 @@ export const ThemeButton = ({ theme }: ThemeButtonProps) => {
   return (
     <div className={styles['theme-bar']}>
       <p className={styles['theme-status']}>{theme === 'light' ? t('theme-status-light') : t('theme-status-dark')}</p>
-      <div className={`${styles['theme-switch']} ${theme === 'light' ? styles.end : styles.start}`} onClick={handleClick}>
-        <div className={styles.themeBtn}>
-          
-        </div>
-      </div>
+      <button
+        type="button"
+        className={`${styles['theme-switch']} ${theme === 'light' ? styles.end : styles.start}`}
+        onClick={handleClick}
+        aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+        aria-pressed={theme === 'light'}
+      >
+        <span className={styles.themeBtn} />
+      </button>
     </div>
   );
 };
