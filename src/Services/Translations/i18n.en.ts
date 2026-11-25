@@ -10,6 +10,8 @@ export const en = {
     "Greetings": "Hi, my name is Vitaliy. I am a web developer.",
     "Hero-description":
       "My creed: I like everything new. I don’t like to stand still.",
+    "[action] Projects": "View projects",
+    "[action] Contact": "Contact me",
     "Email": "Email:",
     "Phone": "Phone number:",
     "niagara-mobile": "Web and mobile app for client of Niagara Club",

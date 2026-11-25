@@ -3,6 +3,8 @@ import Me from '../../assets/images/me.webp';
 import MeSmall from '../../assets/images/me-small.webp';
 import styles from './Hero.module.css';
 import '../../Styles/Container.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTES } from '../../config/Routes';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -20,6 +22,14 @@ export const Hero = () => {
         </div>
         <div className={greetings}>{t('Greetings')}</div>
         <div className={description}>{t('Hero-description')}</div>
+        <div className={styles.actions}>
+          <NavLink className={styles.primaryAction} to={ROUTES.projects}>
+            {t('[action] Projects')}
+          </NavLink>
+          <NavLink className={styles.secondaryAction} to={ROUTES.contact}>
+            {t('[action] Contact')}
+          </NavLink>
+        </div>
       </div>
     </div>
   );

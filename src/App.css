@@ -13,6 +13,8 @@ html, body, #root {
 
 :root,
 :root[data-aria='light'] {
+  --accent: #6252d4;
+  --surface-border: #e4e2ec;
   --main-gray-light: #f4f4f4;
   --main-grey: #d5d2d5ff;
   --text-gray-light: #a6aaaf;
@@ -23,6 +25,8 @@ html, body, #root {
 }
 
 :root[data-aria='dark'] {
+  --accent: #9a8cff;
+  --surface-border: #45454d;
   --main-gray-light: black;
   --main-grey: darkgray;
   --text-gray-light: white;

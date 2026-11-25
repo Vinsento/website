@@ -9,7 +9,13 @@ export const NavButton = ({
   handleClick,
 }: NavButtonProps) => {
   return (
-    <NavLink to={to} className={className} onClick={handleClick}>
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        isActive ? `${className} active` : className
+      }
+      onClick={handleClick}
+    >
       {children}
     </NavLink>
   );

@@ -22,6 +22,7 @@ export const ProjectsPage = () => {
         <div className={styles.projectSite}>{t("description-website")}</div>
         <BreakLine />
         <div className={styles.projectAnother}>{t("another-projects")}</div>
+        <div className={styles.projectsGrid}>
         <ProjectCard
           logo={SnakeLogo}
           stack="React and ChatGPT"
@@ -52,6 +53,7 @@ export const ProjectsPage = () => {
           description="lkames"
           linkName="Lkames"
         />
+        </div>
       </div>
     </div>
   );
